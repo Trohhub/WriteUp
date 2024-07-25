@@ -48,8 +48,8 @@ L'objectif du verb tampering est d'exploiter les différences dans le traitement
 ### Challenge
 En arrivant sur la page il demande automatiquement de quoi se login, dans ce cas réflexe c'est de faire un curl -v de la page, et au début du curl il y a ceci ``GET /web-serveur/ch8/ HTTP/1.1`` indiquant qu'il utilise une méthode GET quand on accède à la page, 
 
-![alt text](challenge_rootme_two.PNG)
+![alt text](Media/challenge_rootme_two.PNG)
 
 Mais si on remple pour à la place du GET on met autre chose, un PUT par exemple ``curl -v http://challenge01.root-me.org/web-serveur/ch8/ -X PUT``, et si cela n'est pas sécuriser cela fonctionne, comme ici, ce qui passe outre la sécurité et donne accès au mot de passe.
 
-![alt text](challenge_rootme_one.PNG)
+![alt text](Media/challenge_rootme_one.PNG)
