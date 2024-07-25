@@ -8,7 +8,15 @@
 
 ## Octobre 2023
 ### CVE-2023-20198
+Le podcast de NoLimitSecu sur la vulnérabilité CVE-2023-20198 se concentre sur une faille critique dans le logiciel Cisco IOS XE. Cette vulnérabilité, exploitée activement dans la nature, permet une élévation de privilèges non authentifiée via l'interface Web, donnant à un attaquant un accès administratif complet (niveau 15). Une fois ce niveau d'accès obtenu, l'attaquant peut prendre le contrôle total de l'appareil.
 
+La découverte de cette faille a été annoncée par Cisco le 16 octobre 2023, après avoir identifié une activité suspecte liée à la création de comptes utilisateurs non autorisés et l'injection de configurations malveillantes. L'exploit a été observé pour la première fois le 18 septembre 2023.
+
+En réponse à cette vulnérabilité, Cisco a recommandé de désactiver l'accès HTTP/S à l'interface Web de IOS XE ou de limiter cet accès à des sources de confiance via des listes de contrôle d'accès (ACL) jusqu'à la publication de correctifs appropriés.
+
+Par ailleurs, une seconde vulnérabilité (CVE-2023-20273) a été identifiée, permettant l'injection de commandes et l'exécution de code arbitraire avec les privilèges root, ce qui a été utilisé en combinaison avec CVE-2023-20198 pour installer des implants malveillants sur les appareils compromis.
+
+Pour plus de détails, vous pouvez consulter les analyses approfondies sur les sites de Tenable et Cato Networks, ainsi que sur le blog de Cisco Talos qui documente les observations faites durant l'enquête sur les appareils compromis.
 ## Mai 2023
 ### Retex gestion de crise
 
