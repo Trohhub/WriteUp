@@ -8,6 +8,8 @@
   - [HTTP - POST](#http---post)
   - [HTTP - Redirection invalide](#http---redirection-invalide)
   - [HTTP - Verb tampering](#http---verb-tampering)
+    - [Verb tampering ?](#verb-tampering-)
+    - [Challenge](#challenge)
 
 ## HTTP - Directory indexing
 En commencant le challenge on démarre sur une page blance, dans ce cas premier réflexe est d'effectuer, sois un curl, sois inspecter la page.
@@ -30,4 +32,14 @@ Ce qu'on veut ici c'est les donnés de la page "index.html", de ce fait il suffi
 
 
 ## HTTP - Verb tampering
+### Verb tampering ?
+Le "verb tampering" désigne la manipulation non autorisée des verbes HTTP (ou méthodes HTTP) utilisés dans les requêtes envoyées à un serveur web. Les verbes HTTP couramment utilisés sont GET, POST, PUT, DELETE, PATCH, etc. Chacun de ces verbes a une fonction spécifique, par exemple :
+
+- GET : Récupérer des données du serveur.
+- POST : Envoyer des données au serveur pour qu'elles soient traitées.
+- PUT : Mettre à jour ou créer une ressource.
+- DELETE : Supprimer une ressource.
+
+L'objectif du verb tampering est d'exploiter les différences dans le traitement des requêtes HTTP par le serveur en modifiant le verbe HTTP de la requête. Cela peut permettre à un attaquant d'accéder à des fonctionnalités non prévues ou de contourner des contrôles de sécurité.
+### Challenge
 En arrivant sur la page il demande automatiquement de quoi se login, dans ce cas réflexe c'est de faire un curl -v de la page, et au début du curl il y a ceci ``GET /web-serveur/ch8/ HTTP/1.1`` indiquant qu'il récupère une méthode GET pour valider le login, mais si on override pour à la place du GET on met autre chose, un PUT par exemple ``curl -v http://challenge01.root-me.org/web-serveur/ch8/ -X PUT``, et si cela n'est pas sécuriser cela fonctionne, comme ici, ce qui passe outre la sécurité et donne accès au mot de passe.
