@@ -12,4 +12,4 @@
 ## Mai 2023
 ### Retex gestion de crise
 
-Le podcast met en avant Stéphane Lenco, qui partage son retour d'expérience sur la gestion d'une crise cyber chez Thales, suite à une attaque par le ransomware LockBit. Dans cet épisode, Lenco détaille les étapes de la gestion de cette crise et les leçons apprises pour améliorer les réponses futures aux incidents de cybersécurité.
+Le podcast met en avant Stéphane Lenco, qui partage son retour d'expérience sur la gestion d'une crise cyber chez Thales, suite à une attaque par le ransomware LockBit. Il détails les étapes de la gestion de cette crise et les leçons apprises pour améliorer les réponses futures aux incidents de cybersécurité.
