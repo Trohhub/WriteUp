@@ -8,15 +8,40 @@
 
 ## Octobre 2023
 ### CVE-2023-20198
-Le podcast de NoLimitSecu sur la vulnérabilité CVE-2023-20198 se concentre sur une faille critique dans le logiciel Cisco IOS XE. Cette vulnérabilité, exploitée activement dans la nature, permet une élévation de privilèges non authentifiée via l'interface Web, donnant à un attaquant un accès administratif complet (niveau 15). Une fois ce niveau d'accès obtenu, l'attaquant peut prendre le contrôle total de l'appareil.
+
+- #### Qu'elle est cette faille ?
+La CVE-2023-20198 se concentre sur une faille critique dans le logiciel Cisco IOS XE. Cette vulnérabilité, exploitée activement dans la nature, permet une élévation de privilèges non authentifiée via l'interface Web, donnant à un attaquant un accès administratif complet (niveau 15). Une fois ce niveau d'accès obtenu, l'attaquant peut prendre le contrôle total de l'appareil.
+
+- #### Niveau privilège IOS de Cisco
+**Niveau 0 (User EXEC Mode) :**
+
+- Accès très limité.
+- Seules quelques commandes de base sont disponibles, comme logout, enable, disable, exit, et help.
+
+**Niveau 1 (User EXEC Mode) :**
+
+- Niveau par défaut pour les utilisateurs.
+- Accès limité aux commandes de base de diagnostic et de connectivité, telles que ping, traceroute, et show.
+
+**Niveau 15 (Privileged EXEC Mode) :**
+
+- Accès complet à toutes les commandes de configuration et de gestion.
+- Les utilisateurs peuvent entrer en mode de configuration globale et modifier la configuration du système.
+  
+Les niveaux de privilège intermédiaires (2 à 14) peuvent être personnalisés
+
+- #### Quand ?
 
 La découverte de cette faille a été annoncée par Cisco le 16 octobre 2023, après avoir identifié une activité suspecte liée à la création de comptes utilisateurs non autorisés et l'injection de configurations malveillantes. L'exploit a été observé pour la première fois le 18 septembre 2023.
 
-En réponse à cette vulnérabilité, Cisco a recommandé de désactiver l'accès HTTP/S à l'interface Web de IOS XE ou de limiter cet accès à des sources de confiance via des listes de contrôle d'accès (ACL) jusqu'à la publication de correctifs appropriés.
+ - #### Réponse ?
 
-Par ailleurs, une seconde vulnérabilité (CVE-2023-20273) a été identifiée, permettant l'injection de commandes et l'exécution de code arbitraire avec les privilèges root, ce qui a été utilisé en combinaison avec CVE-2023-20198 pour installer des implants malveillants sur les appareils compromis.
+Suite à sa Cisco a recommandé de désactiver l'accès HTTP/HTTPS à l'interface Web de IOS XE ou de limiter cet accès à des sources de confiance via des listes de contrôle d'accès (ACL) jusqu'à la publication de patch le 22 octobre 2023. Cisco a publié la mise à jour 17.9.4a pour les systèmes utilisant IOS XE. Par la suite, des mises à jour pour d'autres versions, notamment 17.6.6a et 16.12.10a, ont également été déployées.
 
-Pour plus de détails, vous pouvez consulter les analyses approfondies sur les sites de Tenable et Cato Networks, ainsi que sur le blog de Cisco Talos qui documente les observations faites durant l'enquête sur les appareils compromis.
+- #### Encore, sa fait beaucoup la non ?
+
+Par ailleurs, une seconde vulnérabilité (CVE-2023-20273) a été identifiée, permettant l'injection de commandes et l'exécution de code arbitraire avec les privilèges root, ce qui a été utilisé en combinaison avec CVE-2023-20198 pour installer des logiciel malveillants sur les appareils compromis.
+
 ## Mai 2023
 ### Retex gestion de crise
 
