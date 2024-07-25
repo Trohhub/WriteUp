@@ -44,7 +44,7 @@ Le "verb tampering" désigne la manipulation non autorisée des  méthodes HTTP 
 - DELETE : Supprimer une ressource.
 - PATCH : Appliquer des modifications partielles à une ressource
 
-L'objectif du verb tampering est d'exploiter les différences dans le traitement des requêtes HTTP par le serveur en modifiant le verbe HTTP de la requête. Cela peut permettre à un attaquant d'accéder à des fonctionnalités non prévues ou de contourner des contrôles de sécurité.
+L'objectif du verb tampering est d'exploiter les différences dans le traitement des requêtes HTTP par le serveur en modifiant la methode utilisé. Cela peut permettre à un attaquant d'accéder à des fonctionnalités non prévues ou de contourner des contrôles de sécurité.
 ### Challenge
 En arrivant sur la page il demande automatiquement de quoi se login, dans ce cas réflexe c'est de faire un curl -v de la page, et au début du curl il y a ceci ``GET /web-serveur/ch8/ HTTP/1.1`` indiquant qu'il utilise une méthode GET quand on accède à la page, 
 
