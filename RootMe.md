@@ -33,8 +33,6 @@ Ce qu'on veut ici c'est les donnés de la page "index.html", de ce fait il suffi
 
 ## HTTP - Verb tampering
 
-http://challenge01.root-me.org/web-serveur/ch8/
-
 https://www.root-me.org/fr/Challenges/Web-Serveur/HTTP-Verb-tampering
 
 ### Verb tampering ?
