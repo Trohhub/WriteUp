@@ -44,6 +44,7 @@ Le premiers scan effectuer par Cisco Talos à analysé 80.500 Ip unique exposé 
  5. #### Réponse ?
 
 Suite à sa Cisco a recommandé de désactiver l'accès HTTP/HTTPS à l'interface Web de IOS XE ou de limiter cet accès à des sources de confiance via des listes de contrôle d'accès jusqu'à la publication de patch le 22 octobre 2023. Cisco a publié la mise à jour 17.9.4a pour les systèmes utilisant IOS XE. Par la suite, des mises à jour pour d'autres versions, notamment 17.6.6a et 16.12.10a, ont également été déployées.
+___
 
 ## Mai 2023
 ### Retex gestion de crise
