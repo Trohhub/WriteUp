@@ -36,9 +36,14 @@ La découverte de cette faille a été annoncée par Cisco le 16 octobre 2023, a
 
 4. #### Les dégats ?
 
-Le premiers scan effectuer par Cisco Talos à analysé plus de 53.000 borne cisco compromis dans le monde, et lors d'un second scan plusieurs heures plus tard 8.000 en plus s'y son rajouté. Et tout cela a été l'oeuvre d'un seul individu, en tout cas au début avant l'exposition de la faille Zero Day.
+Le premiers scan effectuer par Cisco Talos à analysé 80.500 Ip unique exposé dons 53.000 IP compromis dans le monde, et lors d'un second scan plusieurs heures plus tard 3.000 en plus s'y son rajouté. Et la découverte et les débuts d'exploitation de cette Zéro day à était l'oeuvre d'un seul individu.
 
- 5. #### Réponse ?
+![](https://media.licdn.com/dms/image/D4E2CAQF0C8gKTAPc9Q/comment-image-shrink_8192_1280/0/1697621519777?e=1722589200&v=beta&t=glxosnmF7EohMIt8G0N38YFIvyzdX8sUu-l6hIJNHoM)
+
+Le premiers scan effectuer par Cisco Talos a analysé plus de 53.000 borne cisco compromis dans le monde, et lors d'un second scan plusieurs heures plus tard 8.000 en plus s'y son rajouté. Et tout cela a été l'oeuvre d'un seul individu, en tout cas au début avant l'exposition de la faille Zero Day.
+>>>>>>> 29e413a25bcb7c56a7f045a73b7ec26b67ccea3b
+
+ 1. #### Réponse ?
 
 Suite à sa Cisco a recommandé de désactiver l'accès HTTP/HTTPS à l'interface Web de IOS XE ou de limiter cet accès à des sources de confiance via des listes de contrôle d'accès jusqu'à la publication de patch le 22 octobre 2023. Cisco a publié la mise à jour 17.9.4a pour les systèmes utilisant IOS XE. Par la suite, des mises à jour pour d'autres versions, notamment 17.6.6a et 16.12.10a, ont également été déployées.
 
