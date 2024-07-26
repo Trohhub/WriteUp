@@ -36,7 +36,7 @@ La découverte de cette faille a été annoncée par Cisco le 16 octobre 2023, a
 
 - #### Les dégats ?
 
-Le premiers scan effectuer par Cisco Talos à analysé plus de 53.000 borne cisco compromis dans le monde, et lors d'un second scan plusieurs heures plutard 8.000 en plus s'y son rajouté. Et tout cela a été l'oeuvre d'un seul individu, en tout cas au début avant l'exposition de la faille Zero Day.
+Le premiers scan effectuer par Cisco Talos à analysé plus de 53.000 borne cisco compromis dans le monde, et lors d'un second scan plusieurs heures plus tard 8.000 en plus s'y son rajouté. Et tout cela a été l'oeuvre d'un seul individu, en tout cas au début avant l'exposition de la faille Zero Day.
 
  - #### Réponse ?
 
