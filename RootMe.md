@@ -35,7 +35,7 @@ Ce qu'on veut ici c'est les donnés de la page "index.html", de ce fait il suffi
 
 http://challenge01.root-me.org/web-serveur/ch8/
 
-https://www.root-me.org/fr/Challenges/Web-Serveur/
+https://www.root-me.org/fr/Challenges/Web-Serveur/HTTP-Verb-tampering
 
 ### Verb tampering ?
 Le "verb tampering" désigne la manipulation non autorisée des  méthodes HTTP utilisés dans les requêtes envoyées à un serveur web. Les plus couramment utilisés sont GET, POST, PUT, DELETE, PATCH. Chacune de ces methodes ont une fonction spécifique, par exemple :
