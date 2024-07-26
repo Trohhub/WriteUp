@@ -9,10 +9,10 @@
 ## Octobre 2023
 ### CVE-2023-20198
 
-- #### Qu'elle est cette faille ?
+1. #### Qu'elle est cette faille ?
 La CVE-2023-20198 utilise sur une faille critique dans Cisco IOS XE. Cette vulnérabilité, permet une élévation de privilèges non authentifiée via l'interface Web, donnant à un attaquant un accès administratif de niveau 15. Pour faire plus simple, l'attaquant injecte du code ce qui créer un utilisateur avec les droits adnimistrateur et une fois ce niveau d'accès obtenu, l'attaquant peut prendre le contrôle total de l'appareil.
 
-- #### Niveau privilège IOS de Cisco
+2. #### Niveau privilège IOS de Cisco
 **Niveau 0 (User EXEC Mode) :**
 
 - Accès très limité.
@@ -30,15 +30,15 @@ La CVE-2023-20198 utilise sur une faille critique dans Cisco IOS XE. Cette vuln�
   
 Les niveaux de privilège intermédiaires (2 à 14) peuvent être personnalisés
 
-- #### Quand ?
+3. #### Quand ?
 
 La découverte de cette faille a été annoncée par Cisco le 16 octobre 2023, après avoir identifié une activité suspecte liée à la création de comptes utilisateurs non autorisés et l'injection de configurations malveillantes. L'exploit a été observé pour la première fois le 18 septembre 2023. 
 
-- #### Les dégats ?
+4. #### Les dégats ?
 
 Le premiers scan effectuer par Cisco Talos à analysé plus de 53.000 borne cisco compromis dans le monde, et lors d'un second scan plusieurs heures plutard 8.000 en plus s'y son rajouté. Et tout cela a été l'oeuvre d'un seul individu, en tout cas au début avant l'exposition de la faille Zero Day.
 
- - #### Réponse ?
+ 5. #### Réponse ?
 
 Suite à sa Cisco a recommandé de désactiver l'accès HTTP/HTTPS à l'interface Web de IOS XE ou de limiter cet accès à des sources de confiance via des listes de contrôle d'accès jusqu'à la publication de patch le 22 octobre 2023. Cisco a publié la mise à jour 17.9.4a pour les systèmes utilisant IOS XE. Par la suite, des mises à jour pour d'autres versions, notamment 17.6.6a et 16.12.10a, ont également été déployées.
 
